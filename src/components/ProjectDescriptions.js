@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../styles/ProjectDescriptions.css";
 
+
 function ProjectDescriptions() {
 
     const handleApplyClick = () => {
@@ -33,7 +34,9 @@ function ProjectDescriptions() {
         [`${prefix}_Environment`]: Array(5).fill(''),
         [`${prefix}_Infrastructure`]: Array(5).fill(''),
         [`${prefix}_Workforce`]: Array(5).fill(''),
-        [`${prefix}_Other`]: Array(5).fill('')
+        [`${prefix}_Other1`]: Array(5).fill(''),
+        [`${prefix}_Other2`]: Array(5).fill(''),
+        [`${prefix}_Other3`]: Array(5).fill('')
     });
 
     const initialConsequenceData = createData('consequence');
@@ -54,13 +57,40 @@ function ProjectDescriptions() {
         }
     };
 
+    const updateCategoryName = (type, oldName, newName) => {
+        const source = type === "consequence" ? consequenceData : likelihoodData;
+        const newData = {...source};
+
+        if (newData[`${type}_${oldName}`]) {
+            newData[`${type}_${newName}`] = newData[`${type}_${oldName}`];
+            delete newData[`${type}_${oldName}`];
+
+            if (type === "consequence") {
+                setConsequenceData(newData);
+            } else {
+                setLikelihoodData(newData);
+            }
+        }
+    };
     const renderTable = (title, type, data) => (
         <div className="table-section">
             <h3>{title}</h3>
             <table>
                 <thead>
                     <tr>
-                        {Object.keys(data).map(category => <th key={category}>{category.split('_')[1]}</th>)}
+                        {Object.keys(data).map(category => 
+                            category.endsWith("_Other1") || category.endsWith("_Other2") || category.endsWith("_Other3") 
+                            ? (
+                                <th key={category}>
+                                    <input 
+                                        type="text" 
+                                        defaultValue={category.split('_')[1]}
+                                        onBlur={e => updateCategoryName(type, category.split('_')[1], e.target.value)}
+                                    />
+                                </th>
+                            )
+                            : <th key={category}>{category.split('_')[1]}</th>
+                        )}
                     </tr>
                 </thead>
                 <tbody>
