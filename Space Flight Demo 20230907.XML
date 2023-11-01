@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <filePath>C:\Users\eaustin\OneDrive - NASA\Documents\PC&amp;I\PCI Applications and Development\Risk\SMART Risk Mgmt Demo Files\LEIA Demo 20210514.srm</filePath>
+  <Risks>
+    <Risk>
+      <ProjectName>LEIA</ProjectName>
+      <Organization>SCF</Organization>
+      <TaskUid />
+      <TaskName />
+      <RiskTitle>Inadequate Thermal Control</RiskTitle>
+      <RiskId>1</RiskId>
+      <ConditionText>Thermal control on the lunar surface is technically challenging, particularly with the limited volume and power resources allowed on CLPS lander vehicles. Biological payloads require tight thermal control tolerances.</ConditionText>
+      <IfText>If the Project is unable to design a sufficiently robust thermal control system within the CLPS vehicle parameters</IfText>
+      <ThenText>Then the experiment may not be controlled to scientifically-sound standards, or fail altogether</ThenText>
+      <RiskDrivers>Payload hardware and resource limitations imposed by CLPS program</RiskDrivers>
+      <Notes />
+      <RiskState>Proposed</RiskState>
+      <RiskTrend>New</RiskTrend>
+      <RiskUrgency>High</RiskUrgency>
+      <Category>Technical</Category>
+      <SecondCategory>None</SecondCategory>
+      <IdentifiedBy>Brandon Maryatt</IdentifiedBy>
+      <IdentifiedDate>2021-04-14T00:00:00</IdentifiedDate>
+      <ClosedDate>2021-04-14T00:00:00</ClosedDate>
+      <ProjectManager>Brandon Maryatt</ProjectManager>
+      <RiskOwner>Brandon Maryatt</RiskOwner>
+      <Team />
+      <Kmr>true</Kmr>
+      <Steps>
+        <MitigationStep>
+          <Step>0</Step>
+          <Uid />
+          <Description>LEIA thermal design is in early concept stages. Additional thermal SMEs can be brought in from Code RE if noticeable progress is not made by early May.</Description>
+          <Complete>true</Complete>
+          <Date>2021-04-14T00:00:00</Date>
+          <BaselineDate>2021-04-14T00:00:00</BaselineDate>
+          <Impact>4</Impact>
+          <Likelihood>5</Likelihood>
+          <RAC>23</RAC>
+          <Cost />
+        </MitigationStep>
+      </Steps>
+    </Risk>
+    <Risk>
+      <ProjectName>LEIA</ProjectName>
+      <Organization>SCF</Organization>
+      <TaskUid />
+      <TaskName />
+      <RiskTitle>Long PI Solicitation Timeline</RiskTitle>
+      <RiskId>2</RiskId>
+      <ConditionText>The process to submit a PI solicitation, undergo review, receive and assess responses, and select a PI takes ~10 months. Currently, a PI selection is expected ~Feb 2022.</ConditionText>
+      <IfText>If the PI selection (and thus experiment defintion) occurs after PRISM-2 proposal deadline</IfText>
+      <ThenText>Then LEIA will not have sufficient information to put forth a competitive PRISM proposal, putting the selection for flight at risk</ThenText>
+      <RiskDrivers>Space Biology (HQ) submittal of PI solicitation and review timeline required by NRESS</RiskDrivers>
+      <Notes />
+      <RiskState>Proposed</RiskState>
+      <RiskTrend>New</RiskTrend>
+      <RiskUrgency>High</RiskUrgency>
+      <Category>Programmatic</Category>
+      <SecondCategory>None</SecondCategory>
+      <IdentifiedBy>Brandon Maryatt</IdentifiedBy>
+      <IdentifiedDate>2021-04-14T00:00:00</IdentifiedDate>
+      <ClosedDate>2021-04-14T00:00:00</ClosedDate>
+      <ProjectManager>Brandon Maryatt</ProjectManager>
+      <RiskOwner>Brandon Maryatt</RiskOwner>
+      <Team />
+      <Kmr>false</Kmr>
+      <Steps>
+        <MitigationStep>
+          <Step>0</Step>
+          <Uid />
+          <Description>Space Biology (HQ) is responsible for submitting PI solicitation. They are working to see if the overall solicitation timeline can be accelerated.</Description>
+          <Complete>true</Complete>
+          <Date>2021-04-14T00:00:00</Date>
+          <BaselineDate>2021-04-14T00:00:00</BaselineDate>
+          <Impact>4</Impact>
+          <Likelihood>5</Likelihood>
+          <RAC>23</RAC>
+          <Cost />
+        </MitigationStep>
+      </Steps>
+    </Risk>
+    <Risk>
+      <ProjectName>LEIA</ProjectName>
+      <Organization>SCF</Organization>
+      <TaskUid />
+      <TaskName />
+      <RiskTitle>COVID Onsite Work Restrictions</RiskTitle>
+      <RiskId>3</RiskId>
+      <ConditionText>Current restrictions to acquiring approval to come onsite and then limitations on the work that can be performed is slowing down the project</ConditionText>
+      <IfText>If restrictions continue at current level past early summer (project assumption for relaxation of restrictions)</IfText>
+      <ThenText>Then the project schedule will incur additional slip</ThenText>
+      <RiskDrivers>Ames Research Center onsite access/work restrictions, tied to current status of local COVID-19 pandemic state</RiskDrivers>
+      <Notes />
+      <RiskState>Proposed</RiskState>
+      <RiskTrend>New</RiskTrend>
+      <RiskUrgency>Low</RiskUrgency>
+      <Category>Programmatic</Category>
+      <SecondCategory>None</SecondCategory>
+      <IdentifiedBy>Brandon Maryatt</IdentifiedBy>
+      <IdentifiedDate>2021-04-14T00:00:00</IdentifiedDate>
+      <ClosedDate>2021-04-14T00:00:00</ClosedDate>
+      <ProjectManager>Brandon Maryatt</ProjectManager>
+      <RiskOwner>Brandon Maryatt</RiskOwner>
+      <Team />
+      <Kmr>true</Kmr>
+      <Steps>
+        <MitigationStep>
+          <Step>0</Step>
+          <Uid />
+          <Description>Ames Research Center remains at Stage 3, no immediate forecasted reduction in onsite access/work restrictions; summer TBD</Description>
+          <Complete>true</Complete>
+          <Date>2021-04-14T00:00:00</Date>
+          <BaselineDate>2021-04-14T00:00:00</BaselineDate>
+          <Impact>3</Impact>
+          <Likelihood>3</Likelihood>
+          <RAC>15</RAC>
+          <Cost />
+        </MitigationStep>
+      </Steps>
+    </Risk>
+    <Risk>
+      <ProjectName>LEIA</ProjectName>
+      <Organization>SCF</Organization>
+      <TaskUid />
+      <TaskName />
+      <RiskTitle>LEIA Configuration Management System</RiskTitle>
+      <RiskId>4</RiskId>
+      <ConditionText>LEIA must define a CM system for the project that satisfies SCF requirements. The project budget and schedule was estimated with the assumption of utilizing efficient, effective tools in use within various engineering organizations at Ames</ConditionText>
+      <IfText>If LEIA is required to use the SCF EDITS system and processes for documents/procedures (ERC) and bonded storage (MCS)</IfText>
+      <ThenText>Then there will be an impact to project cost and schedule due to the substantial overhead that these processes require of project team members</ThenText>
+      <RiskDrivers>Engineering organization (SCF) authority required use of certain CM systems</RiskDrivers>
+      <Notes />
+      <RiskState>Proposed</RiskState>
+      <RiskTrend>New</RiskTrend>
+      <RiskUrgency>Medium</RiskUrgency>
+      <Category>Programmatic</Category>
+      <SecondCategory>None</SecondCategory>
+      <IdentifiedBy>Brandon Maryatt</IdentifiedBy>
+      <IdentifiedDate>2021-04-14T00:00:00</IdentifiedDate>
+      <ClosedDate>2021-04-14T00:00:00</ClosedDate>
+      <ProjectManager>Brandon Maryatt</ProjectManager>
+      <RiskOwner>Brandon Maryatt</RiskOwner>
+      <Team />
+      <Kmr>false</Kmr>
+      <Steps>
+        <MitigationStep>
+          <Step>0</Step>
+          <Uid />
+          <Description>Discussions/negotiations in progress between Project and SCF on required CM processes</Description>
+          <Complete>true</Complete>
+          <Date>2021-04-14T00:00:00</Date>
+          <BaselineDate>2021-04-14T00:00:00</BaselineDate>
+          <Impact>5</Impact>
+          <Likelihood>4</Likelihood>
+          <RAC>24</RAC>
+          <Cost />
+        </MitigationStep>
+      </Steps>
+    </Risk>
+  </Risks>
+  <OrderedRisks />
+  <Categories>
+    <Category>
+      <Type>Cost</Type>
+      <DescriptionLikelihood1>Not Likely
+Probability = 10%</DescriptionLikelihood1>
+      <DescriptionLikelihood2>Low Likelihood
+Probability = 30%</DescriptionLikelihood2>
+      <DescriptionLikelihood3>Likely
+Probability = 50%</DescriptionLikelihood3>
+      <DescriptionLikelihood4>Highly Likely
+Probability = 70%</DescriptionLikelihood4>
+      <DescriptionLikelihood5>Near Certainty
+Probability = 90%</DescriptionLikelihood5>
+      <DescriptionImpact1>Minimal or no impact</DescriptionImpact1>
+      <DescriptionImpact2>&lt; 1% cost increase</DescriptionImpact2>
+      <DescriptionImpact3>1-4% cost increase</DescriptionImpact3>
+      <DescriptionImpact4>5-9% cost increase</DescriptionImpact4>
+      <DescriptionImpact5>&gt; 10% cost increase</DescriptionImpact5>
+    </Category>
+    <Category>
+      <Type>Programmatic</Type>
+      <DescriptionLikelihood1>Not Likely
+Probability = 10%</DescriptionLikelihood1>
+      <DescriptionLikelihood2>Low Likelihood
+Probability = 30%</DescriptionLikelihood2>
+      <DescriptionLikelihood3>Likely
+Probability = 50%</DescriptionLikelihood3>
+      <DescriptionLikelihood4>Highly Likely
+Probability = 70%</DescriptionLikelihood4>
+      <DescriptionLikelihood5>Near Certainty
+Probability = 90%</DescriptionLikelihood5>
+      <DescriptionImpact1>Minimal or no impact</DescriptionImpact1>
+      <DescriptionImpact2>&lt; 1 month schedule slip</DescriptionImpact2>
+      <DescriptionImpact3>1-2 month schedule slip</DescriptionImpact3>
+      <DescriptionImpact4>3-5 month schedule slip</DescriptionImpact4>
+      <DescriptionImpact5>&gt; 6 month schedule slip</DescriptionImpact5>
+    </Category>
+    <Category>
+      <Type>Safety</Type>
+      <DescriptionLikelihood1>Not Likely
+Probability = 10%</DescriptionLikelihood1>
+      <DescriptionLikelihood2>Low Likelihood
+Probability = 30%</DescriptionLikelihood2>
+      <DescriptionLikelihood3>Likely
+Probability = 50%</DescriptionLikelihood3>
+      <DescriptionLikelihood4>Highly Likely
+Probability = 70%</DescriptionLikelihood4>
+      <DescriptionLikelihood5>Near Certainty
+Probability = 90%</DescriptionLikelihood5>
+      <DescriptionImpact1>Minimal or no impact</DescriptionImpact1>
+      <DescriptionImpact2>Minor reduction in performance</DescriptionImpact2>
+      <DescriptionImpact3>Moderate reduction in performance</DescriptionImpact3>
+      <DescriptionImpact4>Significant degradation in performance</DescriptionImpact4>
+      <DescriptionImpact5>Severe degradation in performance; will not meet key technical thresholds</DescriptionImpact5>
+    </Category>
+    <Category>
+      <Type>Schedule</Type>
+      <DescriptionLikelihood1>Not Likely
+Probability = 10%</DescriptionLikelihood1>
+      <DescriptionLikelihood2>Low Likelihood
+Probability = 30%</DescriptionLikelihood2>
+      <DescriptionLikelihood3>Likely
+Probability = 50%</DescriptionLikelihood3>
+      <DescriptionLikelihood4>Highly Likely
+Probability = 70%</DescriptionLikelihood4>
+      <DescriptionLikelihood5>Near Certainty
+Probability = 90%</DescriptionLikelihood5>
+      <DescriptionImpact1>Minimal or no impact</DescriptionImpact1>
+      <DescriptionImpact2>&lt; 1 month schedule slip</DescriptionImpact2>
+      <DescriptionImpact3>1-2 month schedule slip</DescriptionImpact3>
+      <DescriptionImpact4>3-5 month schedule slip</DescriptionImpact4>
+      <DescriptionImpact5>&gt; 6 month schedule slip</DescriptionImpact5>
+    </Category>
+    <Category>
+      <Type>Technical</Type>
+      <DescriptionLikelihood1>Not Likely
+Probability = 10%</DescriptionLikelihood1>
+      <DescriptionLikelihood2>Low Likelihood
+Probability = 30%</DescriptionLikelihood2>
+      <DescriptionLikelihood3>Likely
+Probability = 50%</DescriptionLikelihood3>
+      <DescriptionLikelihood4>Highly Likely
+Probability = 70%</DescriptionLikelihood4>
+      <DescriptionLikelihood5>Near Certainty
+Probability = 90%</DescriptionLikelihood5>
+      <DescriptionImpact1>Minimal or no impact</DescriptionImpact1>
+      <DescriptionImpact2>Minor reduction in performance</DescriptionImpact2>
+      <DescriptionImpact3>Moderate reduction in performance</DescriptionImpact3>
+      <DescriptionImpact4>Significant degradation in performance</DescriptionImpact4>
+      <DescriptionImpact5>Severe degradation in performance; will not meet key technical thresholds</DescriptionImpact5>
+    </Category>
+    <Category>
+      <Type>Acquisition</Type>
+      <DescriptionLikelihood1>Extremely remote possibility that it will happen. Strong controls in place. &lt; 0.01</DescriptionLikelihood1>
+      <DescriptionLikelihood2>Not expected to happen. Controls have minor limitations or uncertainties. 0.01 &lt; - &lt; 0.10</DescriptionLikelihood2>
+      <DescriptionLikelihood3>Could happen. Controls exist, with some limitation or uncertainty. 0.1 &lt; - &lt; 0.33</DescriptionLikelihood3>
+      <DescriptionLikelihood4>Likely to happen. Controls have significant limitations or uncertainties. 0.33 &lt; - 0.50</DescriptionLikelihood4>
+      <DescriptionLikelihood5>Expected to happen. Controls have minimal to no effect. &gt; 0.50</DescriptionLikelihood5>
+      <DescriptionImpact1>Acquisition Consequence 1</DescriptionImpact1>
+      <DescriptionImpact2>Acquisition Consequence 2</DescriptionImpact2>
+      <DescriptionImpact3>Acquisition Consequence 3</DescriptionImpact3>
+      <DescriptionImpact4>Acquisition Consequence 4</DescriptionImpact4>
+      <DescriptionImpact5>Acquisition Consequence 5</DescriptionImpact5>
+    </Category>
+    <Category>
+      <Type>Environment</Type>
+      <DescriptionLikelihood1>Extremely remote possibility that it will happen. Strong controls in place. &lt; 0.01</DescriptionLikelihood1>
+      <DescriptionLikelihood2>Not expected to happen. Controls have minor limitations or uncertainties. 0.01 &lt; - &lt; 0.10</DescriptionLikelihood2>
+      <DescriptionLikelihood3>Could happen. Controls exist, with some limitation or uncertainty. 0.1 &lt; - &lt; 0.33</DescriptionLikelihood3>
+      <DescriptionLikelihood4>Likely to happen. Controls have significant limitations or uncertainties. 0.33 &lt; - 0.50</DescriptionLikelihood4>
+      <DescriptionLikelihood5>Expected to happen. Controls have minimal to no effect. &gt; 0.50</DescriptionLikelihood5>
+      <DescriptionImpact1>Minor or non-reportable hazard or incident.</DescriptionImpact1>
+      <DescriptionImpact2>Moderate hazard or reportable violation.</DescriptionImpact2>
+      <DescriptionImpact3>Significant violation; Event requires immediate remediation.</DescriptionImpact3>
+      <DescriptionImpact4>Major violation; Event causes temporary work stoppage.</DescriptionImpact4>
+      <DescriptionImpact5>Catastrophic hazard</DescriptionImpact5>
+    </Category>
+    <Category>
+      <Type>Infrastructure</Type>
+      <DescriptionLikelihood1>Extremely remote possibility that it will happen. Strong controls in place. &lt; 0.01</DescriptionLikelihood1>
+      <DescriptionLikelihood2>Not expected to happen. Controls have minor limitations or uncertainties. 0.01 &lt; - &lt; 0.10</DescriptionLikelihood2>
+      <DescriptionLikelihood3>Could happen. Controls exist, with some limitation or uncertainty. 0.1 &lt; - &lt; 0.33</DescriptionLikelihood3>
+      <DescriptionLikelihood4>Likely to happen. Controls have significant limitations or uncertainties. 0.33 &lt; - 0.50</DescriptionLikelihood4>
+      <DescriptionLikelihood5>Expected to happen. Controls have minimal to no effect. &gt; 0.50</DescriptionLikelihood5>
+      <DescriptionImpact1>More than normal wear and tear. &gt; $20K</DescriptionImpact1>
+      <DescriptionImpact2>Property damage $20K &lt; $50K</DescriptionImpact2>
+      <DescriptionImpact3>Property damage $50K &lt; $500K</DescriptionImpact3>
+      <DescriptionImpact4>Destruction of non-critical assests or damage $500K &lt; $2M</DescriptionImpact4>
+      <DescriptionImpact5>Destruction of critical assets or damage &gt; $2M</DescriptionImpact5>
+    </Category>
+    <Category>
+      <Type>Workforce</Type>
+      <DescriptionLikelihood1>Extremely remote possibility that it will happen. Strong controls in place. &lt; 0.01</DescriptionLikelihood1>
+      <DescriptionLikelihood2>Not expected to happen. Controls have minor limitations or uncertainties. 0.01 &lt; - &lt; 0.10</DescriptionLikelihood2>
+      <DescriptionLikelihood3>Could happen. Controls exist, with some limitation or uncertainty. 0.1 &lt; - &lt; 0.33</DescriptionLikelihood3>
+      <DescriptionLikelihood4>Likely to happen. Controls have significant limitations or uncertainties. 0.33 &lt; - 0.50</DescriptionLikelihood4>
+      <DescriptionLikelihood5>Expected to happen. Controls have minimal to no effect. &gt; 0.50</DescriptionLikelihood5>
+      <DescriptionImpact1>Loss of &lt; 2% success/exit criteria.</DescriptionImpact1>
+      <DescriptionImpact2>Loss of 2% &lt; 5% success/exit criteria.</DescriptionImpact2>
+      <DescriptionImpact3>Loss of 5% &lt; 10% success/exit criteria.</DescriptionImpact3>
+      <DescriptionImpact4>Loss of 10% &lt; 15% success/exit criteria.</DescriptionImpact4>
+      <DescriptionImpact5>Loss of &gt; 15%  success/exit criteria.</DescriptionImpact5>
+    </Category>
+  </Categories>
+  <ProjectName>LEIA</ProjectName>
+  <ProjectManager>Brandon Maryatt</ProjectManager>
+  <RiskManager>Brandon Maryatt</RiskManager>
+  <ProjectDescription />
+  <ProjectLogoPath />
+  <MSProjectFile />
+  <ProjectOrganization>ARC-S</ProjectOrganization>
+</Project>
