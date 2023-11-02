@@ -5,11 +5,11 @@ import "../styles/WelcomeScreen.css";
 import Logo from "./Logo";
 
 
-
 function WelcomeScreen() {
     return (
         <div className="welcome-screen">
             <div className="left-box">
+                <h1>Welcome</h1>
                 <WelcomeButtons />
                 <Logo />
             </div>

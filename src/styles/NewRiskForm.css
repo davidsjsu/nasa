@@ -1,0 +1,72 @@
+/* NewRiskForm.css */
+
+.new-risk-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .new-risk-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .new-risk-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .new-risk-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .new-risk-form input,
+  .new-risk-form select,
+  .new-risk-form textarea {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .new-risk-form select {
+    width: 100%;
+  }
+  
+  .new-risk-form textarea {
+    min-height: 100px;
+  }
+  
+  .new-risk-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .new-risk-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .new-risk-form button[type="button"] {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .new-risk-form button[type="button"]:hover {
+    background-color: #999;
+  }
+  
