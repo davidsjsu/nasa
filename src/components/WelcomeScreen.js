@@ -1,9 +1,6 @@
 import React from "react";
 import WelcomeButtons from "./WelcomeButtons";
-import WelcomeText from "./WelcomeText";
 import "../styles/WelcomeScreen.css";
-import Logo from "./Logo";
-
 
 function WelcomeScreen() {
     return (
@@ -11,15 +8,9 @@ function WelcomeScreen() {
             <div className="left-box">
                 <h1>Welcome</h1>
                 <WelcomeButtons />
-                <Logo />
-            </div>
-            <div className="right-box">
-                <WelcomeText />
             </div>
         </div>
-
     );
-
 }
 
 export default WelcomeScreen;
