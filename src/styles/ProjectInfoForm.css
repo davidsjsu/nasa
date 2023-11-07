@@ -1,0 +1,44 @@
+.projectinfoform {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.projectinfoform label {
+    text-align: left;
+    display: block
+}
+
+.projectinfoform h2 {
+    font-size: 30px;
+    color: black;
+    margin-top: 30px;
+}
+
+.projectinfoform input, .projectinfoform textarea, .projectinfoform select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: block;
+}
+
+.btn-group-1, .btn-group-2, .btn-group-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .btn-group-1 button, .btn-group-2 button, .btn-group-3 button {
+    padding: 10px 20px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-group-1 button:hover, .btn-group-2 button:hover, .btn-group-3 button:hover {
+    background-color: black;
+  }
