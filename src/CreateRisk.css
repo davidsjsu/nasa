@@ -1,0 +1,53 @@
+.createRiskForm {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.createRiskForm h2 {
+  text-align: center;
+}
+
+.createRiskForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.createRiskForm input[type="text"],
+.createRiskForm select,
+.createRiskForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.createRiskForm input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.createRiskForm button {
+  width: 100px;
+  padding: 10px;
+  margin-right: 10px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.createRiskForm button:hover {
+  background-color: #45a049;
+}
+
+.createRiskForm p {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #888;
+}
