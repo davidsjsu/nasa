@@ -25,7 +25,7 @@ function Dashboard() {
     const isAsc = sortKey === key ? !ascending : true;
     setSortKey(key);
     setAscending(isAsc);
-  
+
     setRiskData({
       ...riskData,
       Project: {
@@ -48,7 +48,7 @@ function Dashboard() {
         })),
       },
     });
-  };  
+  };
 
   if (!riskData) {
     return <div>No Project Selected</div>;
@@ -56,7 +56,6 @@ function Dashboard() {
 
   const risks = riskData.Project.Risks[0].Risk;
 
-  // The pie chart logic should be the same as in your original Dashboard component.
   const riskCategories = risks.reduce((acc, risk) => {
     acc[risk.Category] = (acc[risk.Category] || 0) + 1;
     return acc;
@@ -85,30 +84,40 @@ function Dashboard() {
     ]
   };
 
+  // Function to determine the class for the risk impact
+  const getImpactClass = (impactValue) => {
+    const impactNum = parseInt(impactValue, 10);
+    return `impact-${impactNum}`;
+  };
+
   return (
     <div className="dashboard">
       <div className="risk-report-section">
         <h2>Risk Report</h2>
-        <div className="risk-report">
-          <div className="risk-header">
-            <span onClick={() => handleSort('RiskId', true)}>Risk ID</span>
-            <span onClick={() => handleSort('RiskTitle', false)}>Risk Title</span>
-            <span onClick={() => handleSort('Likelihood', true, true)}>L</span>
-            <span onClick={() => handleSort('Impact', true, true)}>I</span>
-            <span onClick={() => handleSort('Category', false)}>Risk Type</span>
-            <span onClick={() => handleSort('RiskState', false)}>Status</span>
-          </div>
-          {risks.map((risk, index) => (
-            <div key={index} className="risk-row" data-impact={risk.Steps[0].MitigationStep[0].Impact}>
-              <span>{risk.RiskId}</span>
-              <span>{risk.RiskTitle}</span>
-              <span>{risk.Steps[0].MitigationStep[0].Likelihood}</span>
-              <span>{risk.Steps[0].MitigationStep[0].Impact}</span>
-              <span>{risk.Category}</span>
-              <span>{risk.RiskState}</span>
-            </div>
-          ))}
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th onClick={() => handleSort('RiskId', true)}>Risk ID</th>
+              <th onClick={() => handleSort('RiskTitle', false)}>Risk Title</th>
+              <th onClick={() => handleSort('Likelihood', true, true)}>L</th>
+              <th onClick={() => handleSort('Impact', true, true)}>I</th>
+              <th onClick={() => handleSort('Category', false)}>Risk Type</th>
+              <th onClick={() => handleSort('RiskState', false)}>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {risks.map((risk, index) => (
+              <tr key={index} className={getImpactClass(risk.Steps[0].MitigationStep[0].Impact)}>
+                <td>{risk.RiskId}</td>
+                <td>{risk.RiskTitle}</td>
+                <td>{risk.Steps[0].MitigationStep[0].Likelihood}</td>
+                <td>{risk.Steps[0].MitigationStep[0].Impact}</td>
+                <td>{risk.Category}</td>
+                <td>{risk.RiskState}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
       <div className="risk-pie-chart-section">
         <h2>Risk Category Spread</h2>
@@ -118,5 +127,6 @@ function Dashboard() {
       </div>
     </div>
   );
-}  
+}
+
 export default Dashboard;

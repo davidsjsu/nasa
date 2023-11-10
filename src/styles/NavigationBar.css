@@ -1,16 +1,35 @@
-.navigation-bar{
-    background-color: darkgrey;
-    color: white;
-    align-items: flex-start;
+.navigation-bar {
+    background-color: #6eb5ff;
+    color: black;
+    align-items: center;
     font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0; /* Reduced padding here */
 }
 
 .navigation-bar a {
-    color: white;
     text-decoration: none;
-    margin-right: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+    color: black;
+}
+
+.navigation-bar a:hover {
+    background-color: #6ea4ff;
+    color: #333;
+    text-decoration: underline;
 }
 
 .navigation-bar .welcome-link {
-    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navigation-bar .welcome-link:hover {
+    text-decoration: underline;
+}
+
+.navigation-bar .current-page {
+    text-decoration: underline;
 }
