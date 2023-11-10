@@ -58,39 +58,68 @@ function ProjectDescriptions() {
     };
 
     const updateCategoryName = (type, oldName, newName) => {
+        newName = newName.trim();
+    
+        // Get the correct state based on the type
         const source = type === "consequence" ? consequenceData : likelihoodData;
-        const newData = {...source};
-
-        if (newData[`${type}_${oldName}`]) {
-            newData[`${type}_${newName}`] = newData[`${type}_${oldName}`];
-            delete newData[`${type}_${oldName}`];
-
-            if (type === "consequence") {
-                setConsequenceData(newData);
-            } else {
-                setLikelihoodData(newData);
-            }
+        const oldKey = `${type}_${oldName}`;
+        
+        // If the new name is empty or the old name does not exist in the source, do nothing
+        if (!newName || !source[oldKey]) {
+            return;
+        }
+    
+        const newData = { ...source };
+        const newKey = `${type}_${newName}`;
+    
+        // If the old key exists, create a new key with the new name and copy the values
+        if (oldName !== newName) {
+            newData[newKey] = newData[oldKey];
+            delete newData[oldKey];
+        }
+    
+        // Update the state with the new data
+        if (type === "consequence") {
+            setConsequenceData(newData);
+        } else {
+            setLikelihoodData(newData);
         }
     };
+    
+    
     const renderTable = (title, type, data) => (
         <div className="table-section">
             <h3>{title}</h3>
             <table>
                 <thead>
                     <tr>
-                        {Object.keys(data).map(category => 
-                            category.endsWith("_Other1") || category.endsWith("_Other2") || category.endsWith("_Other3") 
-                            ? (
+                        {Object.keys(data).map(category => {
+                            const isEditableOtherCategory = category.endsWith("_Other1") ||
+                                                           category.endsWith("_Other2") ||
+                                                           category.endsWith("_Other3");
+                            const categoryName = category.split('_')[1];
+    
+                            return isEditableOtherCategory ? (
                                 <th key={category}>
                                     <input 
                                         type="text" 
-                                        defaultValue={category.split('_')[1]}
-                                        onBlur={e => updateCategoryName(type, category.split('_')[1], e.target.value)}
+                                        defaultValue={categoryName}
+                                        onBlur={(e) => {
+                                            const newName = e.target.value.trim();
+                                            // Call updateCategoryName only if newName is not empty
+                                            if (newName) {
+                                                updateCategoryName(type, categoryName, newName);
+                                            } else {
+                                                // Reset to the default value if newName is empty
+                                                e.target.value = categoryName;
+                                            }
+                                        }}
                                     />
                                 </th>
-                            )
-                            : <th key={category}>{category.split('_')[1]}</th>
-                        )}
+                            ) : (
+                                <th key={category}>{categoryName}</th>
+                            );
+                        })}
                     </tr>
                 </thead>
                 <tbody>
@@ -111,6 +140,8 @@ function ProjectDescriptions() {
             </table>
         </div>
     );
+    
+    
 
     return (
         <div className="project-descriptions">

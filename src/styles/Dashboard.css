@@ -1,0 +1,25 @@
+
+.risk-report-section {
+  margin-bottom: 20px;
+}
+
+.risk-report {
+  display: flex;
+  flex-direction: column;
+  /* Other styles to ensure rows are within one container */
+}
+
+.risk-pie-chart-section {
+  max-width: 300px; /* Adjust as needed */
+  margin: auto;
+}
+
+.risk-pie-chart {
+  max-height: 300px; /* Adjust as needed */
+  position: relative;
+}
+
+/* Chart.js canvas size adjustment */
+.risk-pie-chart canvas {
+  max-height: 100% !important;
+}
