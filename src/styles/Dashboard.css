@@ -1,25 +1,52 @@
-
-.risk-report-section {
-  margin-bottom: 20px;
+table {
+  width: 100%;
+  border-collapse: collapse; /* for a cleaner look */
 }
 
-.risk-report {
-  display: flex;
-  flex-direction: column;
-  /* Other styles to ensure rows are within one container */
+th, td {
+  border: 1px solid #ddd; /* example border */
+  text-align: left; /* align text to the left */
+  padding: 8px; /* add some padding */
 }
 
-.risk-pie-chart-section {
-  max-width: 300px; /* Adjust as needed */
-  margin: auto;
+/* Add zebra striping for rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-.risk-pie-chart {
-  max-height: 300px; /* Adjust as needed */
-  position: relative;
+th {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer; /* indicates the header is clickable */
 }
 
-/* Chart.js canvas size adjustment */
-.risk-pie-chart canvas {
-  max-height: 100% !important;
+/* Add underline on hover for table headers */
+th:hover {
+  text-decoration: underline; /* underline on hover */
+}
+
+/* Color coding for impact levels */
+.impact-1 {
+  background-color: #98fb98; /* light green for lowest impact */
+}
+
+.impact-2 {
+  background-color: #9acd32; /* yellow-green */
+}
+
+.impact-3 {
+  background-color: #ffd700; /* gold for medium impact */
+}
+
+.impact-4 {
+  background-color: #ffa500; /* orange for higher impact */
+}
+
+.impact-5 {
+  background-color: #ff4500; /* red for highest impact */
+}
+
+/* Hover effect for table rows */
+tr:hover {
+  background-color: #ddd; /* light grey background on hover */
 }

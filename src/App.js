@@ -1,5 +1,4 @@
-// App.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import WelcomeScreen from "./components/WelcomeScreen";
@@ -10,7 +9,6 @@ import Dashboard from './components/Dashboard'; // Make sure you have this impor
 import RiskDataContext from './components/RiskDataContext'; // Import the RiskDataContext
 import CreateRisk from './components/CreateRisk'; // Adjust the path as needed
 
-
 function App() {
   const [showProjectSettings, setShowProjectSettings] = useState(false);
   const [riskData, setRiskData] = useState(null); // State to hold the parsed risk data
@@ -18,6 +16,21 @@ function App() {
   const handleProjectSettingsClick = () => {
     setShowProjectSettings(true);
   };
+
+  // Effect hook to fetch and parse data (adjust this logic as needed)
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('your-data-api-endpoint');
+        const jsonData = await response.json();
+        setRiskData(jsonData);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <RiskDataContext.Provider value={{ riskData, setRiskData }}> {/* Wrap the application with RiskDataContext.Provider */}
@@ -31,7 +44,7 @@ function App() {
             {/* Add other routes as needed */}
             <Route path="/welcome" element={<WelcomeScreen />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/" element={<XMLDisplay />} /> {/* Ensure this component exists and is imported */}
+            <Route path="/" element={<XMLDisplay data={riskData} />} /> {/* Pass the risk data to XMLDisplay */}
             <Route path="/create-new-risk" element={<CreateRisk />} />
           </Routes>
         </div>
