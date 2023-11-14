@@ -122,7 +122,7 @@ function Dashboard() {
       <div className="risk-pie-chart-section">
         <h2>Risk Category Spread</h2>
         <div className="risk-pie-chart">
-          <Pie data={pieData} options={{ maintainAspectRatio: true, responsive: true }} />
+          <Pie data={pieData} options={{ maintainAspectRatio: true, responsive: true, aspectRatio: 3 }}  />
         </div>
       </div>
     </div>

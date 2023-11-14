@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/XMLDisplay.css';
 import RiskDataContext from './RiskDataContext';
+import { useNavigate } from "react-router-dom";
 
 function XMLDisplay({ data }) {
   const [sortKey, setSortKey] = useState(null);
@@ -15,6 +16,13 @@ function XMLDisplay({ data }) {
     }
   }, [data, setRiskData]);
 
+  const naviagte = useNavigate();
+
+  const handleEditButtonClick = () => {
+    naviagte("/project-settings");
+  };
+
+
   if (!data || !data.Project || !data.Project.Risks || !data.Project.Risks[0] || !data.Project.Risks[0].Risk) {
     return <div>No risks found</div>;
   }
@@ -26,6 +34,10 @@ function XMLDisplay({ data }) {
       {risk.Organization && <p><strong>Organization:</strong> {risk.Organization}</p>}
       {risk.ProjectManager && <p><strong>Project Manager:</strong> {risk.ProjectManager}</p>}
       {risk.RiskOwner && <p><strong>Risk Manager:</strong> {risk.RiskOwner}</p>}
+
+      <button onClick={handleEditButtonClick} className="edit-button">
+      Edit
+    </button>
     </div>
   ))[0]; // Only take the first risk for project info
 
