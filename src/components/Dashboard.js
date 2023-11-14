@@ -9,6 +9,7 @@ import {
 } from 'chart.js';
 import RiskDataContext from './RiskDataContext';
 import '../styles/XMLDisplay.css';
+import RiskMatrix from './RiskMatrix';
 
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale);
 
@@ -84,6 +85,7 @@ function Dashboard() {
     ]
   };
 
+ 
   // Function to determine the class for the risk impact
   const getImpactClass = (impactValue) => {
     const impactNum = parseInt(impactValue, 10);
@@ -124,6 +126,7 @@ function Dashboard() {
         <div className="risk-pie-chart">
           <Pie data={pieData} options={{ maintainAspectRatio: true, responsive: true, aspectRatio: 3 }}  />
         </div>
+        <RiskMatrix />
       </div>
     </div>
   );
